@@ -11,7 +11,7 @@ html, body {
 #main {
     height: 100%;
     width: 100%;
-    background: color #f8f8f8; 
+    background-color:  #f8f8f8; 
     position: relative;
     padding-top: 0.1px;
 }
@@ -45,7 +45,7 @@ html, body {
     justify-content: center;
     border-right: 2px solid #000;
     font-size: 26px;
-    font-size: 600;
+    font-weight: 600;
 }
 #nav h2:nth-last-child(2) {
     width: 29%;
@@ -88,6 +88,7 @@ html, body {
 #over1 h1{
     font-family: monument;
     font-size: 3.6vw;
+    
     
 }
 #over1 h2{
@@ -210,4 +211,49 @@ background-position: center;
 }
 #page2-part2 img {
     height: 70%;
+}
+#page3{
+    height: 100%;
+    width: 100%;
+   position: relative;
+   padding: 5vw 4vw;
+}
+#page3>h1 {
+    text-align: center;
+    font-family: monument;
+    text-transform: uppercase;
+    font-size: 3vw;
+    margin-bottom: 7vh;
+    
+}
+#elem{
+    height: 15.5vh;
+    width: 100%;
+    border-top: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+}
+.elem h4{
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 6%;
+
+}
+.elem .elem-part2{
+    width:45%;
+}
+.elem-part2 h1{
+    font-size: 3vw;
+    font-weight: 500;
+    
+}
+.elem-part2 h{
+    font-size:1vw;
+    font-weight: 600;
+}
+.elem:nth-last-child(1) {
+    border-top: 2px solid #000;
 }
