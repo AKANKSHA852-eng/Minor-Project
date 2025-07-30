@@ -25,6 +25,9 @@ html, body {
     align-items: center;
     justify-content: space-between;
 }
+#nav h3{
+    display: none;
+}
 #nav h1{
    
     height: 100%;
@@ -368,67 +371,124 @@ background-position: center;
    
 }
 @media (max-width:600px) {
+    body{
+        overflow-x: hidden;
+    }
     #nav {
-    height: 12vh;
+    height: 8vh;  
+    margin-top: 20px;
+    padding: 0 5vw;   
+}
+#nav h1{
+    justify-content: flex-start;
+    font-size: 24px;  
+}
+#nav h3{
+    display: block;
+}
+#nav h1::after{
+    display: none;
+}
+#nav h1::before{
+    display: none;
+   }
+#nav h2{
+    display: none;
+}
+#centre {
+    height: 40%;
     width: 100%;
-    margin-top: 40px;
-    border-top: 2px solid #000;
-    border-bottom: 2px solid #000;
+    padding: 4vw;
+    position: relative;
+    
+}
+#content {
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    
+}
+#content video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#overlay {
+    height:fit-content ;
+    width: 100%;
+    position: absolute;
+    bottom:0 ;
+    padding: 3vw;
+}
+
+#over1{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 2vw;
 }
-#nav h1{
-   
-    height: 100%;
-    width: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#over1 h1{
     font-family: monument;
-    font-size: 45px;
-    letter-spacing: -1px;
-    position: relative;
-}
-#nav h1::after{
-    content:"©️";
-    color: #000;
-    font-family: gilroy;
-    font-weight: 400;
-    font-size: 22px;
-    position: absolute;
-    top: 22%;
-    right: 13%;
-}
-#nav h1::before{
-    content:"model management";
-    font-family: gilroy;
-    font-weight: 400;
-    color: #666;
-    font-size: 15px;
-    letter-spacing: 0.1px;
-    position: absolute;
-    bottom: 22%;
-    right: 18%;
-}
-
-#nav h2{
-   
-    height: 100%;
-    width: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-right: 2px solid #000;
-    font-size: 26px;
-    font-weight: 600;
-}
-#nav h2:nth-last-child(2) {
-    width: 29%;
+    color:#fff;
+    font-size: 5.5vw;
+    font-weight: 100;
+    
     
 }
-#nav h2:nth-last-child(1) {
-    width: 10%;
+#over1 h2{
+    font-size: 2vw;
+    padding: 3vw 3.2vw;
+    border-radius: 50%;
+    margin-top: 2vw;
+    margin-right: 6vw;
+    border: 1px solid #fff;
+    
+
+}
+#over2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #fff;
+    padding: 1.5vw 0;
+}
+#over2 h4{
+    font-size: 3vw;
+    font-weight: 500;
+    color: #fff;
+}
+#over2 img {
+    height: 3vw;
+    width: 1.5vw;
+    margin-left: 5vw;
+}
+#scroll {
+    height: 20vh;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+   
+}
+#container {
+    height: 100%;
+    width: fit-content;
+    display: inline-block;
+    padding: 2vw;
+    animation-name: anime;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+#scroll img {
+    height: 95%;
+    border-radius: 50%;
+    width: 15.5%;
+    margin:1vw ;
+    object-fit: cover;
+    object-position: 30% 0%;
 }
 
 }
