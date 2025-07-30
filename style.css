@@ -35,7 +35,30 @@ html, body {
     font-family: monument;
     font-size: 45px;
     letter-spacing: -1px;
+    position: relative;
 }
+#nav h1::after{
+    content:"©️";
+    color: #000;
+    font-family: gilroy;
+    font-weight: 400;
+    font-size: 22px;
+    position: absolute;
+    top: 22%;
+    right: 13%;
+}
+#nav h1::before{
+    content:"model management";
+    font-family: gilroy;
+    font-weight: 400;
+    color: #666;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+    position: absolute;
+    bottom: 22%;
+    right: 18%;
+}
+
 #nav h2{
    
     height: 100%;
@@ -226,7 +249,7 @@ background-position: center;
     margin-bottom: 7vh;
     
 }
-#elem{
+.elem{
     height: 15.5vh;
     width: 100%;
     border-top: 2px solid #000;
@@ -234,6 +257,19 @@ background-position: center;
     align-items: center;
     justify-content: space-between;
     padding: 0 2vw;
+    position: relative;
+}
+.elem img {
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    border-radius: 50%;
+    left: 12%;
+    opacity: 0;
+    object-fit: cover;
+    object-position: top;
+    transition:all ease 0.7s;
+    
 }
 .elem h4{
     font-size: 1vw;
@@ -246,14 +282,133 @@ background-position: center;
     width:45%;
 }
 .elem-part2 h1{
-    font-size: 3vw;
+    font-size: 2.7vw;
     font-weight: 500;
     
 }
-.elem-part2 h{
-    font-size:1vw;
+.elem-part2 h5{
+    font-size:0.8vw;
     font-weight: 600;
+    text-transform: uppercase;
 }
 .elem:nth-last-child(1) {
     border-top: 2px solid #000;
+}
+
+.elem:nth-last-child(1) img{
+    left: 40%;
+}
+.elem:nth-last-child(3) img {
+     left: 40%;
+}
+
+.elem:hover img {
+    opacity: 1;
+    left: 24%;
+}
+#marquee {
+   
+    width: 100%;
+    padding:0.8vw;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    
+}
+#marquee h1 {
+    display: inline block;
+    font-size: 3vw;
+    font-weight: 900;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    letter-spacing: 3px;
+    font-family: monument;
+    margin-right: 16px;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes move{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+    
+   
+#footer {
+    height: 10vh;
+    width: 100%;
+   
+}
+@media (max-width:600px) {
+    #nav {
+    height: 12vh;
+    width: 100%;
+    margin-top: 40px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav h1{
+   
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monument;
+    font-size: 45px;
+    letter-spacing: -1px;
+    position: relative;
+}
+#nav h1::after{
+    content:"©️";
+    color: #000;
+    font-family: gilroy;
+    font-weight: 400;
+    font-size: 22px;
+    position: absolute;
+    top: 22%;
+    right: 13%;
+}
+#nav h1::before{
+    content:"model management";
+    font-family: gilroy;
+    font-weight: 400;
+    color: #666;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+    position: absolute;
+    bottom: 22%;
+    right: 18%;
+}
+
+#nav h2{
+   
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid #000;
+    font-size: 26px;
+    font-weight: 600;
+}
+#nav h2:nth-last-child(2) {
+    width: 29%;
+    
+}
+#nav h2:nth-last-child(1) {
+    width: 10%;
+}
+
 }
