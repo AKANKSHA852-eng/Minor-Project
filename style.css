@@ -502,4 +502,12 @@ background-position: center;
     border-bottom: 2px solid #000;
 
 }
+#alphabet h5{
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 0.3px;
+    margin-right: 2vw ;
+}
 }
